@@ -43,11 +43,11 @@
 						</goals>
 					</execution>
 				</executions>
-				<configuration>
-					<properties>
-						<swarm.bind.address>127.0.0.1</swarm.bind.address>
-					</properties>
-				</configuration>
+<!-- 				<configuration> -->
+<!-- 					<properties> -->
+<!-- 						<swarm.bind.address>127.0.0.1</swarm.bind.address> -->
+<!-- 					</properties> -->
+<!-- 				</configuration> -->
 			</plugin>
 		</plugins>
 	</build>
@@ -97,13 +97,22 @@
 			<groupId>org.wildfly.swarm</groupId>
 			<artifactId>messaging</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.wildfly.swarm</groupId>
-			<artifactId>infinispan</artifactId>
-		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.wildfly.swarm</groupId> -->
+<!-- 			<artifactId>infinispan</artifactId> -->
+<!-- 		</dependency> -->
+
+
+	<!-- Configuration access DataBase  -->
 		<dependency>
 			<groupId>org.wildfly.swarm</groupId>
 			<artifactId>jpa</artifactId>
+		</dependency>
+	<!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+		<dependency>
+		    <groupId>com.h2database</groupId>
+		    <artifactId>h2</artifactId>
+		    <version>1.4.196</version>
 		</dependency>
 		<dependency>
 			<groupId>org.wildfly.swarm</groupId>
